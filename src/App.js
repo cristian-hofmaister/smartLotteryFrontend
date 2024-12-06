@@ -148,7 +148,7 @@ function App() {
             onChange={(e) => setUserId(e.target.value)}
           />
         </label>
-        <button onClick={generateOtp}>Generate OTP</button>
+        <button onClick={generateOtp}>INVALID - Generate OTP</button>
       </div>
 
       {otp && <p>Your OTP: {otp}</p>}
@@ -170,11 +170,11 @@ function App() {
             onChange={(e) => setAmount(e.target.value)}
           />
         </label>
-        <button onClick={registerParticipant}>Register Participant</button>
+        <button onClick={registerParticipant}>INVALID - Register Participant</button>
       </div>
 
       <div style={{ marginBottom: "20px" }}>
-        <button onClick={fetchParticipants}>Fetch Participants</button>
+        <button onClick={fetchParticipants}>INVALID - Fetch Participants</button>
         {participants.length > 0 && (
           <ul>
             {participants.map((participant, index) => (
